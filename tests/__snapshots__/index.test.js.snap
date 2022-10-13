@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box Default Box 1`] = `
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Box Invalid theme indices Box with compound props 1`] = `
+.emotion-0 {
+  padding: 2;
+  margin: 2;
+  width: 3;
+  max-width: 3;
+  min-width: 3;
+  height: 3;
+  max-height: 3;
+  min-height: 3;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Box Invalid theme indices Box with explicit props 1`] = `
+.emotion-0 {
+  padding-top: 2;
+  padding-bottom: 2;
+  padding-left: 2;
+  padding-right: 2;
+  margin-top: 2;
+  margin-bottom: 2;
+  margin-left: 2;
+  margin-right: 2;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Box Invalid theme indices Box with horizontal and vertical props 1`] = `
+.emotion-0 {
+  padding-left: 2;
+  padding-right: 2;
+  padding-top: 2;
+  padding-bottom: 2;
+  margin-left: 2;
+  margin-right: 2;
+  margin-top: 2;
+  margin-bottom: 2;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Box Valid theme indices Box with compound props 1`] = `
+.emotion-0 {
+  padding: 8px;
+  margin: 8px;
+  width: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  height: 32px;
+  max-height: 32px;
+  min-height: 32px;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Box Valid theme indices Box with explicit props 1`] = `
+.emotion-0 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Box Valid theme indices Box with horizontal and vertical props 1`] = `
+.emotion-0 {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Column 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: left;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  row-gap: 8px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Column forwards props Box with compound props 1`] = `
+.emotion-0 {
+  padding: 8px;
+  margin: 8px;
+  width: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  height: 32px;
+  max-height: 32px;
+  min-height: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  -webkit-justify-content: normal;
+  justify-content: normal;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Column forwards props Box with explicit props 1`] = `
+.emotion-0 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  -webkit-justify-content: normal;
+  justify-content: normal;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Column forwards props Box with horizontal and vertical props 1`] = `
+.emotion-0 {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  -webkit-justify-content: normal;
+  justify-content: normal;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Default Column 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  -webkit-justify-content: normal;
+  justify-content: normal;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Default Row 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  -webkit-justify-content: normal;
+  justify-content: normal;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Row 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: left;
+  justify-content: left;
+  gap: 8px;
+  row-gap: 8px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Row forwards props Box with compound props 1`] = `
+.emotion-0 {
+  padding: 8px;
+  margin: 8px;
+  width: 32px;
+  max-width: 32px;
+  min-width: 32px;
+  height: 32px;
+  max-height: 32px;
+  min-height: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  -webkit-justify-content: normal;
+  justify-content: normal;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Row forwards props Box with explicit props 1`] = `
+.emotion-0 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  -webkit-justify-content: normal;
+  justify-content: normal;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
+
+exports[`Layout Row forwards props Box with horizontal and vertical props 1`] = `
+.emotion-0 {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  -webkit-justify-content: normal;
+  justify-content: normal;
+}
+
+<div
+  className="emotion-0"
+/>
+`;
