@@ -60,6 +60,8 @@ It is recommeded to have a `0` keyed size and space to represent `0`. `px` suffi
 If the requested key is not found in the theme, the provided value is used directly. This can be used in cases where a value
 outside the theme is needed for instance a percentage (%) width / height.
 
+> **_NOTE:_**  The theme is completly optional. If the theme is not provided through `ThemeProvider` the provided prop value will be used directly.
+
 #### Box
 Box is a container. It renders a `div` with a requested size and spacing.
 

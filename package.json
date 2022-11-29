@@ -16,7 +16,6 @@
   "author": "eskawl",
   "license": "MIT",
   "peerDependencies": {
-    "@emotion/react": "^11.10",
     "react": "^16"
   },
   "dependencies": {

@@ -138,6 +138,13 @@ describe('Box', () =>{
       render: (target) => render(target, emptyTheme)
     });
   });
+
+  describe('No theme provided', () => {
+    boxTests({
+      getValueFromTheme: (_, propValue) => `${propValue}`,
+      render: create,
+    });
+  });
 });
 
 describe('Layout', () => {
