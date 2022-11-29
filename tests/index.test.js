@@ -112,6 +112,25 @@ const boxTests = ({
 
     Object.keys(props).forEach(expect(wrapper.props).not.toHaveProperty);
   });
+
+  test('Box with position props', () => {
+    const props = {
+      position: 'absolute',
+      top: 2,
+      right: 2,
+      bottom: 2,
+      left: 2,
+    };
+
+    const wrapper = render(<Component {...props} />).toJSON();
+    expect(wrapper).toMatchSnapshot();
+
+    expect(wrapper).toHaveStyleRule('position', props.position);
+    expect(wrapper).toHaveStyleRule('left', getValueFromTheme(theme.sizes, props.left));
+    expect(wrapper).toHaveStyleRule('right', getValueFromTheme(theme.sizes, props.right));
+    expect(wrapper).toHaveStyleRule('top', getValueFromTheme(theme.sizes, props.top));
+    expect(wrapper).toHaveStyleRule('bottom', getValueFromTheme(theme.sizes, props.bottom));
+  })
 }
 
 describe('Box', () =>{
@@ -196,8 +215,8 @@ describe('Layout', () => {
     { name: 'Column', Component: Column }
   ];
 
-  describe.each(flexComponents)('$name invalid theme indices', ({ Component }) => {
-    test('Row with invalid theme indices', () => {
+  describe.each(flexComponents)('$name invalid theme indices', ({ Component, name }) => {
+    test(`${name} with invalid theme indices`, () => {
       const props = {
         gap: '20%',
         gapHorizontal: '20%',

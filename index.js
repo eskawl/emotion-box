@@ -95,6 +95,21 @@ export const Box = styled('div', {
   ${props => props.minHeight && `
     min-height: ${getValueFromTheme(getSizesFromTheme(props), props.minHeight) || props.minHeight};
   `}
+  ${props => props.position && `
+    position: ${props.position};
+  `}
+  ${props => props.top && `
+    top: ${getValueFromTheme(getSizesFromTheme(props), props.top) || props.top};
+  `}
+  ${props => props.right && `
+    right: ${getValueFromTheme(getSizesFromTheme(props), props.right) || props.right};
+  `}
+  ${props => props.bottom && `
+    bottom: ${getValueFromTheme(getSizesFromTheme(props), props.bottom) || props.bottom};
+  `}
+  ${props => props.left && `
+    left: ${getValueFromTheme(getSizesFromTheme(props), props.left) || props.left};
+  `}
 `;
 
 const Flex = styled(Box)`

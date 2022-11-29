@@ -77,6 +77,10 @@ Box is a container. It renders a `div` with a requested size and spacing.
 - `height`, `maxHeight`, `minHeight`: 
   - Sets height of the box.
   - Uses `sizes` property of theme.
+- `position`: Set the css `position` property. Eg: `absolute`, `fixed` etc
+  - `top`, `right`, `bottom`, `left`: 
+    - Sets the offsets.
+    - User `sizez` property fo theme.
 
 #### Row
 Row is a `flex` container, which lays out items in a row.
