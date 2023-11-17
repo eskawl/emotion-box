@@ -1,6 +1,6 @@
 {
   "name": "@eskawl/emotion-box",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Box component for styled components using emotion",
   "main": "index.jsx",
   "scripts": {
@@ -36,8 +36,5 @@
     "react-dom": "^18.2.0",
     "react-test-renderer": "^18.2.0"
   },
-  "packageManager": "yarn@4.0.2",
-  "workspaces": [
-    "storybook"
-  ]
+  "packageManager": "yarn@4.0.2"
 }
