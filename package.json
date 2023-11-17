@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "yarn workspace @eskawl/emotion-box test"
+  },
   "private": true,
   "packageManager": "yarn@4.0.2",
   "workspaces": [
