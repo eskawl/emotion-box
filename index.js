@@ -130,12 +130,12 @@ const Flex = styled(Box)`
     flex: ${props.flex};
   `}
 `
-// Alignement is horizontal. Prefer it.
+// Alignment is horizontal. Prefer it.
 export const Row = ({ children, alignment, justify, ...others }) => {
   return <Flex direction="row" justify={alignment} alignment={justify} {...others}>{children}</Flex>
 }
 
-// Alignement is horizontal. Prefer it.
+// Alignment is horizontal. Prefer it.
 export const Column = ({ children, ...others }) => {
   return <Flex direction="column" {...others}>{children}</Flex>
 }

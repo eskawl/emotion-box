@@ -65,6 +65,10 @@ outside the theme is needed for instance a percentage (%) width / height.
 #### Box
 Box is a container. It renders a `div` with a requested size and spacing.
 
+```js
+import { Box } from "@eskawl/emotion-box";
+```
+
 - `padding`, `paddingHorizontal`, `paddingVertical`, `padding(Left|Right|Top|Bottom)`: 
   - Sets padding of the box. Ex: `<Box paddingLeft={2} />`.
   - Uses `space` property of theme.
