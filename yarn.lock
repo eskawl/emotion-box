@@ -2058,6 +2058,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eskawl/configger@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "@eskawl/configger@npm:0.0.6"
+  checksum: 3a1d73c4bc87c5f7e341f5254db50692c0583d58683590568145cfa4a89d08b4945ade8afa10ca034eef296d0cc0471d81b0c7c457a159b8ef92ed61197bdd47
+  languageName: node
+  linkType: hard
+
 "@eskawl/emotion-box@workspace:^, @eskawl/emotion-box@workspace:packages/emotion-box":
   version: 0.0.0-use.local
   resolution: "@eskawl/emotion-box@workspace:packages/emotion-box"
@@ -2069,6 +2076,7 @@ __metadata:
     "@emotion/jest": "npm:^11.11.0"
     "@emotion/react": "npm:^11.11.1"
     "@emotion/styled": "npm:^11.11.0"
+    "@eskawl/configger": "npm:^0.0.6"
     babel-jest: "npm:^29.7.0"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
