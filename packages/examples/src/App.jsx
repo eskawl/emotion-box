@@ -46,15 +46,15 @@ function App() {
       </Row>
       <hr />
 
-      <h2>Row hAlign="right"</h2>
-      <Row hAlign="right">
+      <h2>Row alignHorizontal="right"</h2>
+      <Row alignHorizontal="right">
         <BorderBox>1</BorderBox>
         <BorderBox>2</BorderBox>
       </Row>
       <hr />
 
-      <h2>Row vAlign="center" </h2>
-      <Row vAlign="center" height="200px" border="1px solid black">
+      <h2>Row alignVertical="center" </h2>
+      <Row alignVertical="center" height="200px" border="1px solid black">
         <BorderBox>1</BorderBox>
         <BorderBox>2</BorderBox>
       </Row>
@@ -67,20 +67,20 @@ function App() {
       </Column>
       <hr />
 
-      <h2>Column hAlign="flex-end"</h2>
-      <Column hAlign="flex-end">
+      <h2>Column alignHorizontal="flex-end"</h2>
+      <Column alignHorizontal="flex-end">
         <BorderBox>1</BorderBox>
         <BorderBox>2</BorderBox>
       </Column>
       <hr />
 
-      <h2>Column vAlign="center" </h2>
-      <Column vAlign="center" height="400px" border="1px solid black">
+      <h2>Column alignVertical="center" </h2>
+      <Column alignVertical="center" height="400px" border="1px solid black">
         <BorderBox>1</BorderBox>
         <BorderBox>2</BorderBox>
       </Column>
       <hr />
-      
+
     </ThemeProvider>
   )
 }
