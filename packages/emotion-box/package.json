@@ -13,8 +13,14 @@
     "layout",
     "box"
   ],
+  "files": [
+    "**.*"
+  ],
   "author": "eskawl",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/eskawl/emotion-box"
+  },
   "peerDependencies": {
     "react": "^16"
   },
