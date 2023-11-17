@@ -1,5 +1,7 @@
 ## Emotion Box
 
+Layout components for use with `@emotion/react`.
+
 ### Installation
 
 ```npm install @eskawl/emotion-box```

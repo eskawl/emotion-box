@@ -1,0 +1,42 @@
+{
+  "name": "@eskawl/emotion-box",
+  "version": "0.1.0",
+  "description": "Box component for styled components using emotion",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage=true"
+  },
+  "keywords": [
+    "react",
+    "styled",
+    "layout",
+    "box"
+  ],
+  "author": "eskawl",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "dependencies": {
+    "@emotion/is-prop-valid": "^1.2.1",
+    "@emotion/styled": "^11.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "@emotion/jest": "^11.11.0",
+    "@emotion/react": "^11.11.1",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0"
+  },
+  "packageManager": "yarn@4.0.2",
+  "workspaces": [
+    "storybook"
+  ]
+}
