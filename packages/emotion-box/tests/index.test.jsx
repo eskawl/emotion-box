@@ -272,8 +272,6 @@ describe('Layout', () => {
     expect(wrapper).toHaveStyleRule('column-gap', getValueFromTheme(theme.space, props.gapVertical));
     expect(wrapper).toHaveStyleRule('row-gap', getValueFromTheme(theme.space, props.gapHorizontal));
 
-    console.log(wrapper.props)
-
     Object.keys(props).forEach(expect(wrapper.props).not.toHaveProperty);
   });
 

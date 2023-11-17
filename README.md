@@ -1,12 +1,15 @@
 ## Emotion Box
 
+Simple to use layout components. Provides Box, Row, Column layouts.
+
 ### Installation
 
 ```npm install @eskawl/emotion-box```
 
 ### Usage
 
-1. Provide a theme to your app
+1. [OPTIONAL] Provide a theme to your app. If a theme is provided you can used aliases for spacing
+like 'xxsmall' or '3'. This can help in acheiving uniformity through out your application.
 
 ```js
 import { ThemeProvider } from "@emotion/react";
@@ -38,7 +41,7 @@ function App() {
 }
 ```
 
-2. Use the box component
+2. Use the layout components
 
 ```js
 import { Column, Row } from "@eskawl/emotion-box";
@@ -65,6 +68,10 @@ outside the theme is needed for instance a percentage (%) width / height.
 #### Box
 Box is a container. It renders a `div` with a requested size and spacing.
 
+```js
+import { Box } from "@eskawl/emotion-box";
+```
+
 - `padding`, `paddingHorizontal`, `paddingVertical`, `padding(Left|Right|Top|Bottom)`: 
   - Sets padding of the box. Ex: `<Box paddingLeft={2} />`.
   - Uses `space` property of theme.
@@ -84,9 +91,18 @@ Box is a container. It renders a `div` with a requested size and spacing.
 
 #### Row
 Row is a `flex` container, which lays out items in a row.
-- `alignment`: Horizontal alignment of items. Accepts values for `main-axis` alignment i.e., `justify-content`. Ex: `space-between, left`
-- `justify`: Vertical alignment of items. Accepts values for `cross-axis` alignment i.e., `align-items`. Ex: `flex-start`
-- `flex`: Controls the flex css prop. Useful if this row is a flex item, '1 0 auto'
+- `alignmentHorizontal`: Horizontal alignment of items. Accepts values for `main-axis` alignment i.e., `justify-content`. Ex: `space-between, left`
+- `alignementVertical`: Vertical alignment of items. Accepts values for `cross-axis` alignment i.e., `align-items`. Ex: `flex-start`
+- `flex`: Controls the flex css prop. Useful if this row is a flex item, Ex: `1 0 auto`
+- `gap`, `gapHorizontal`, `gapVertical`: 
+  - Sets the gap between the items.
+  - Uses `space` properlty of theme.
+
+#### Column
+Column is a `flex` container, which lays out items in a column.
+- `alignmentHorizontal`: Horizontal alignment of items. Accepts values for `cross-axis` alignment i.e., `align-items`. Ex: `flex-start`
+- `alignementVertical`: Vertical alignment of items. Accepts values for `main-axis` alignment i.e., `justify-content`. Ex: `space-between, left`
+- `flex`: Controls the flex css prop. Useful if this Column is a flex item, Ex: `1 0 auto`
 - `gap`, `gapHorizontal`, `gapVertical`: 
   - Sets the gap between the items.
   - Uses `space` properlty of theme.

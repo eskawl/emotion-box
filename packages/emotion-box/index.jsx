@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import isPropValid from '@emotion/is-prop-valid';
+import configger from '@eskawl/configger';
 
 export const getValueFromTheme = (themeFragment, key) => {
   if(themeFragment[key]) {
@@ -130,12 +131,24 @@ const Flex = styled(Box)`
     flex: ${props.flex};
   `}
 `
-// Alignement is horizontal. Prefer it.
-export const Row = ({ children, alignment, justify, ...others }) => {
-  return <Flex direction="row" justify={alignment} alignment={justify} {...others}>{children}</Flex>
+
+const getFlexConfiguration = configger({
+  aliases: {
+    alignment: 'alignHorizontal',
+    justify: 'alignVertical',
+  },
+});
+
+// Alignment is horizontal. Prefer it.
+export const Row = ({ children, ...others }) => {
+  const {alignHorizontal, alignVertical, ...otherParsed} = getFlexConfiguration(others);
+
+  return <Flex direction="row" justify={alignHorizontal} alignment={alignVertical} {...otherParsed}>{children}</Flex>
 }
 
-// Alignement is horizontal. Prefer it.
+// Alignment is horizontal. Prefer it.
 export const Column = ({ children, ...others }) => {
-  return <Flex direction="column" {...others}>{children}</Flex>
+  const {alignHorizontal, alignVertical, ...otherParsed} = getFlexConfiguration(others);
+
+  return <Flex direction="column" justify={alignVertical} alignment={alignHorizontal} {...otherParsed}>{children}</Flex>
 }
