@@ -42,6 +42,5 @@ jobs:
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        base-path: ./packages/emotion-box
-        debug: true
+        base-path: ${{ github.workspace }}/packages/emotion-box
 
