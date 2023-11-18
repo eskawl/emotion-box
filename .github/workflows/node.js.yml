@@ -31,7 +31,7 @@ jobs:
     - name: Install yarn
       run: yarn set version stable
     - name: Install
-      run: yarn --frozen-lockfile
+      run: yarn --immutable
     - name: Install package dependencies
       run: yarn workspace @eskawl/emotion-box install
     - name: Test
