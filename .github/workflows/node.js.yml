@@ -38,12 +38,14 @@ jobs:
   test:
     needs: build
     runs-on: ubuntu-latest
+    steps:
     - name: Test
       run: yarn test
   
   coverage:
     needs: test
     runs-on: ubuntu-latest
+    steps:
     - name: Coverage
       run: yarn coverage
     - name: Coveralls
