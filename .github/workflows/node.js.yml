@@ -34,8 +34,16 @@ jobs:
       run: yarn --immutable
     - name: Install package dependencies
       run: yarn workspace @eskawl/emotion-box install
+  
+  test:
+    needs: build
+    runs-on: ubuntu-latest
     - name: Test
       run: yarn test
+  
+  coverage:
+    needs: test
+    runs-on: ubuntu-latest
     - name: Coverage
       run: yarn coverage
     - name: Coveralls
@@ -43,4 +51,5 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         base-path: ${{ github.workspace }}/packages/emotion-box
+        path-to-lcov: ${{ github.workspace }}/packages/emotion-box/coverage/lcov.info
 
