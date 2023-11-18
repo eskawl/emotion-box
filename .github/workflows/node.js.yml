@@ -42,5 +42,5 @@ jobs:
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        files: packages/emotion-box/coverage/lcov.info
+        base-path: packages/emotion-box
 
