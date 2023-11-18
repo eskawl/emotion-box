@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "coverage": "yarn workspace @eskawl/emotion-box coverage",
     "test": "yarn workspace @eskawl/emotion-box test"
   },
   "private": true,

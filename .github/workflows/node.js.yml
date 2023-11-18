@@ -5,9 +5,9 @@ name: Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -24,14 +24,26 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Enable corepack for yarn
+      run: corepack enable
+    - name: Setup corepack for yarn
+      run: corepack prepare yarn@stable --activate
+    - name: Install yarn
+      run: yarn set version stable
     - name: Install
-      run: yarn --frozen-lockfile
+      run: yarn --immutable
+    - name: Install package dependencies
+      run: yarn workspace @eskawl/emotion-box install
+  
     - name: Test
       run: yarn test
+  
     - name: Coverage
       run: yarn coverage
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+        base-path: ${{ github.workspace }}/packages/emotion-box
+        path-to-lcov: ${{ github.workspace }}/packages/emotion-box/coverage/lcov.info
 
