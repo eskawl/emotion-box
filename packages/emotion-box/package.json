@@ -1,6 +1,6 @@
 {
   "name": "@eskawl/emotion-box",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Box component for styled components using emotion",
   "main": "index.jsx",
   "scripts": {
